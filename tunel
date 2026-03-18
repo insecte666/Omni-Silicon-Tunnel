@@ -1,0 +1,28 @@
+using System;
+using System.Threading.Tasks;
+
+namespace OmniProject
+{
+    class Program
+    {
+        static async Task Main(string[] args)
+        {
+            Console.WriteLine("==============================================");
+            Console.WriteLine("    OMNI-SILICON-TUNNEL : ACTIVÉ");
+            Console.WriteLine("    IDENTIFIANT : eb435c83bfb059dfbf3c5d385fbaa46677c1b136");
+            Console.WriteLine("    STATUT : SUCCESS / VERT");
+            Console.WriteLine("    CLAUSE : REPRISE À 1$ (SAUF LES DETTES)");
+            Console.WriteLine("==============================================");
+
+            // Simulation du flux
+            for(int i = 1; i <= 5; i++) {
+                Console.WriteLine($"[FLUX] Injection bloc {i}... OK");
+                await Task.Delay(500);
+            }
+
+            Console.WriteLine("==============================================");
+            Console.WriteLine("    MONOPOLE DU SILENCE : EN VEILLE");
+            Console.WriteLine("==============================================");
+        }
+    }
+}
